@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  itemsList = ['Volvo','Honda','Toyota'];
+  
+  newItem = "";
+  add(){
+    if(this.newItem != ""){
+      this.itemsList.push(this.newItem);
+      this.newItem = "";
+    }
+  }
+
+  del(index){
+    this.itemsList.splice(index, 1);
+  }
 }
