@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  itemsList = ['Volvo','Honda','Toyota'];
+  itemsList = ['React','Node','Angular'];
   
   newItem = "";
   add(){
